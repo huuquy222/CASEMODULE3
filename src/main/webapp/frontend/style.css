@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body {
+    background-color: #FFDB00;
+}
+header {
+    background-color: #FFDB00;  
+    text-align: center;
+    height: 44px;
+}
+nav {
+    background-color:black
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav ul li  a {
+    color: white;
+    font-size: 12px;
+}
+.nav ul li :nth-child(2) i {
+    color:#FFDB00;
+    font-size: 15px;
+}
+.nav ul li :nth-child(2) {
+    color: #FFDB00;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+nav ul li :nth-child(3) {
+    position: relative;
+}
+nav ul li :nth-child(3) input {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 6px;
+    outline: none;
+}
+nav ul li :nth-child(3) i {
+    position: absolute;
+    font-size: 30px;
+    right: 12px;
+    color :bisque;
+    line-height: 30px;
+}
+nav ul li :nth-child(4) button{
+    height: 30px;
+    padding: 0 12px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.btn-content {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #FFDB00;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+.btn-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #FFDB00;
+    display: block;
+    pointer-events: none;
+    animation: btnani 0.5s linear infinite;
+    display: block;
+
+}
+@keyframes btnani {
+    form{
+        opacity: 0.4;
+    }
+    to{
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+nav ul li :nth-child(4) button i{
+    margin-right: 6px;
+}
+nav ul li :nth-child(4) button:hover{
+    background-color: rgb(184, 172, 172);
+}
+nav ul li :nth-child(5) {
+    text-align: center;
+}
+nav ul li :nth-child(5):hover a {
+    color: #FFDB00;
+}
+.btn-content {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #FFDB00;
+    display: block;
+}
+nav ul li :nth-child(6) :hover a{
+    color: #FFDB00;
+}
+nav ul li :nth-child(7) :hover{
+    color: #FFDB00;
+}
+nav ul li :nth-child(8) :hover{
+    color: #FFDB00;
+}
+nav ul li :nth-child(9) :hover{
+    color: #FFDB00;
+}
+.menu-bar {
+    background-color: #FFDB00;
+}
+
+/* CSS MENU */
+.menu-bar ul {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(26, 23, 23);
+}
+.menu-bar ul li a {
+    color: rgb(29, 26, 26);
+    font-size: 13px;
+}
+.menu-bar ul li a i {
+    margin-right: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-bar >  ul >  li {
+    padding: 12px 6px;
+    transition: all 0.2s ease;
+}
+.menu-bar ul li:hover{
+    background-color: white;
+}
+.menu-bar ul  li :nth-child(9) {
+    position: relative;
+}
+.slide-content {
+    text-align: center;
+}
+img {
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* CSS PRODUCT */
+div.product {
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+div.products {
+    display: flex;
+}
+div.product.img {
+    width: 100%;
+}
+/* .div.product.img :hover {
+    transform: skew(-20deg)
+} */
+div.info {
+    background-color: darkgrey;
+    padding: 10px;
+}
+
+/* CSS PRODUCT2 */
+div.product {
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+div.products2 {
+    display: flex;
+}
+.product > img{
+    height: 300px;
+}
+
+/* CSS FOOOTER */
+
+footer {
+    background-color: bisque;
+}
+
+/* CSS FORM ĐỊA CHỈ NGƯỜI ĐẶT HÀNG */
+.address-form {
+    position: fixed;
+    width: 100VW;
+    height: 100VH;
+    background-color: rgb(0, 0, 0.8);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+    z-index: 999;
+}
+.address-form-content {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+}
+.address-form-content form {
+    padding: 12px 40px;
+}
+
+.address-form-content h2 {
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.address-form-content h2 span {
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 7px;
+    border: 1px solid #ddd;
+    right: 14px;
+    cursor: pointer;
+    top: 50%;
+    transform: translate(-6);
+    line-height: 30px;
+    color: #333;
+    border-radius: 5px;
+}
+.address-form-content form input,select {
+    height: 45px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 5px;
+}
+.address-form-content form p {
+    font-size: 16px;
+}
+
+.address-form-content form button {
+    margin-top: 25px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    background-color: rgb(216, 132, 71);
+    outline: none;
+    border: none;
+    color: #ddd;
+}
+
+/* CSS PHỤ KIỆN */
+.menu-bar-content ul li {
+    position: relative;
+
+}
+.submenu {
+    position: absolute;
+    background-color: #ddd;
+    width: 300px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    display: none;
+}
+.submenu ul {
+    display: flex;
+    flex-direction: column;
+}
+.submenu ul li {
+    padding: 6px 0;
+}
+.submenu ul li :hover a {
+    background-color: #FFDB00;
+}
+.menu-bar-content ul li:hover .submenu {
+    display: block;
+}
+.submenu ul li :hover {
+    background :none;
+}
+
+
+
